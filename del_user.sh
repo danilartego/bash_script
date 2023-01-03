@@ -29,5 +29,5 @@ sudo rm -rf /home/$user_2
 # Изменим название группы managers на marketing
 # sudo groupmod -n marketing managers
 
-cat /etc/group | grep -E "share|mama|olga"
-cat /etc/passwd | grep -E "share|mama|olga"
+cat /etc/group | grep -E "$group|$user_1|$user_2"
+cat /etc/passwd | grep -E "$group|$user_1|$user_2"
