@@ -1,0 +1,3 @@
+plex_media
+shared_folder
+sync_folder
