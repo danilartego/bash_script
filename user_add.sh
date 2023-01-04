@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Чтение данных из других файлов
-source ./var.sh
+source ./_var.sh
 
 # Список пользователей
 # sed 's/:.*//' /etc/passwd

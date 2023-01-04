@@ -1,7 +1,5 @@
 #!/bin/bash
 
-source ./var.sh
-
 users="./_users.txt"
 groups="./_groups.txt"
 folders="./_folders.txt"
