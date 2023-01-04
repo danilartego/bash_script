@@ -8,24 +8,24 @@ folders="./_folders.txt"
 
 pass=$(echo "pass" | openssl passwd -1 -stdin)
 
-# Создать пользователей из списка
 for user in $(cat $users)
   do
+  # Создать пользователей из списка
   sudo useradd -m $user -p $pass -s /bin/bash
   echo "Добавить пользователя с именем: $user"
 
-  # Создать группы из списка
   for group in $(cat $groups)
     do
+    # Создать группы из списка
     sudo useradd $group
     echo "Добавить группу с именем: $group"
     sudo usermod -a -G $group $user
     echo "Добавить группу к пользователю: $user"
     sudo usermod -a -G $group $USER
       
-    # Создать папки из списка
     for folder in $(cat $folders)
       do
+      # Создать папки из списка
       sudo mkdir /home/$folder
       echo "Создание папки с именем: $folder"
       sudo chown -R $group:$group /home/$folder
