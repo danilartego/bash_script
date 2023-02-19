@@ -1,4 +1,4 @@
-### Ubuntu Linux Script v1.2.1
+### Ubuntu Linux Script v1.2.2
 Добавление пользователей и папок с указание прав доступа
 `create.sh`
 
