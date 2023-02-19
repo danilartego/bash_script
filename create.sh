@@ -6,8 +6,6 @@ users="./_users.txt"
 groups="./_groups.txt"
 folders="./_folders.txt"
 
-pass_hash=$(echo "pass" | openssl passwd -1 -stdin)
-
 # Создать пользователей из списка
 for user in $(cat $users)
   do
